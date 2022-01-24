@@ -7,21 +7,21 @@ public class Ficha28 {
 	//(considere que um mês tem 30 dias).
 	
 	public static void convertSeconds(int segundos) {
-	  int meses = segundos/(30*24*3600); 
+		int meses = segundos/(30*24*3600); 
 		
-	  segundos = segundos%(24*3600);
-	  int dias = segundos/(24*3600); 
+		segundos = segundos%(30*24*3600);
+		int dias = segundos/(24*3600); 
 		  
-	  segundos = segundos%(24*3600); 
-	  int horas = segundos/3600; 
+		segundos = segundos%(24*3600); 
+	    int horas = segundos/3600; 
 	  
-	  segundos %= 3600; 
-	  int minutos = segundos/60; 
+	    segundos %= 3600; 
+	    int minutos = segundos/60; 
 	  
-	  segundos %= 60; 
-	  int seg = segundos;
+	    segundos %= 60; 
+	    int seg = segundos;
 	    
-	  System.out.println(meses+" meses, "+dias +" dias, "+horas+" horas, "+minutos+" minutos, "+seg+" segundos");
+	    System.out.println(meses+" meses, "+dias +" dias, "+horas+" horas, "+minutos+" minutos, "+seg+" segundos");
 	}
 	
 	public static void main(String[] args) {
