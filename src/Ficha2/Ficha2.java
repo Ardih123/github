@@ -1,4 +1,4 @@
-package github;
+package Ficha2;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package github;
+package Ficha3;
 
 /*Ex. 3: Crie uma classe Casa, a qual deverá ter os seguintes atributos e métodos:
  * 
