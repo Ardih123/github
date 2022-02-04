@@ -1,6 +1,7 @@
 package Ficha3;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class ContaBancaria {
 /*	a)Uma variável de instância de acesso privado, titular, com tipo String.
@@ -53,7 +54,8 @@ public class ContaBancaria {
 	}
 	
 	public String getInformaçãoConta() {
-		String dados = "Titular: " + titular + " Saldo: " + saldo + " Data Abertura: " + dataAbertura + "\n";
+		DateTimeFormatter dataFormatada = DateTimeFormatter.ofPattern("dd/MM/YYYY");
+		String dados = "Titular: " + titular + " Saldo: " + saldo + " Data Abertura: " + dataFormatada.format(dataAbertura) + "\n";
 		return dados;
 	}
 	
