@@ -28,15 +28,6 @@ public class Main {
 		}
 		
 		
-		//banco
-		System.out.println("\nbanco");
-		
-		bancoListaContas.add(new Banco("seila"));
-		bancoListaContas.get(0).criaConta(listaContas.get(0));
-		
-		System.out.println(bancoListaContas.get(0).getConta("joao"));
-		
-		
 		//casa
 		System.out.println("\ncasa");
 		
@@ -58,6 +49,17 @@ public class Main {
 			System.out.printf("Morada: %s  Custo: %.2f  Venda: %.2f  Lucro: %.2f  LucroPercent: %.2f%% \n", 
 							casas.getMorada(), casas.getPrecoCusto(), casas.getPrecoVenda(), casas.getLucro(), casas.getPercentMargemLucro());
 		}
+		
+		
+		
+		//banco
+		System.out.println("\nbanco");
+		
+		bancoListaContas.add(new Banco("seila"));
+		bancoListaContas.get(0).criaConta(listaContas.get(0));
+		
+		System.out.println(bancoListaContas.get(0).getConta("joao"));
+		
 		
 	}
 
