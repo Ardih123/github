@@ -32,16 +32,16 @@ public class ContaBancaria {
 	
 	public ContaBancaria(String aNome) {
 		titular = aNome;
-		this.dataAbertura = dataAbertura;
-		this.saldo = saldo;
+		getDataAbertura();
+		getSaldo();
 	}
 
 	public double getSaldo() {
 		return saldo;
 	}
 
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
+	public void setSaldo(double aSaldo) {
+		this.saldo = aSaldo;
 	}
 
 	public String getTitular() {
@@ -57,15 +57,15 @@ public class ContaBancaria {
 		return dados;
 	}
 	
-	public void depositar(double valorDepositar) {
-		saldo += valorDepositar;
-		System.out.printf("depositou %.2f \n",valorDepositar);
+	public void depositar(double aValorDepositar) {
+		saldo += aValorDepositar;
+		System.out.printf("depositou %.2f \n",aValorDepositar);
 	}
 	
-	public void levantar(double valorLevantar) {
-		if (saldo - valorLevantar > 0) {
-			saldo -= valorLevantar;
-			System.out.printf("levantou %.2f \n",valorLevantar);
+	public void levantar(double aValorLevantar) {
+		if (saldo - aValorLevantar > 0) {
+			saldo -= aValorLevantar;
+			System.out.printf("levantou %.2f \n",aValorLevantar);
 		}
 		else {
 			System.out.println("nao tem saldo suficiente");
