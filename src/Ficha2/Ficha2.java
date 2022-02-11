@@ -80,12 +80,12 @@ public class Ficha2 {
 	}
 	
 	public static void converteSegundos(int segundos) {
-		int meses = segundos/(30*24*3600); 
+	    int meses = segundos/(30*24*3600); 
 		
-		segundos = segundos%(30*24*3600);
-		int dias = segundos/(24*3600); 
+	    segundos = segundos%(30*24*3600);
+	    int dias = segundos/(24*3600); 
 		  
-		segundos = segundos%(24*3600); 
+	    segundos = segundos%(24*3600); 
 	    int horas = segundos/3600; 
 	  
 	    segundos %= 3600; 
@@ -100,13 +100,13 @@ public class Ficha2 {
 	
 	//main
 	public static void main(String[] args) {
-		int altura, base, comp, x, y, z, n, segundos;
-		String texto;
+	int altura, base, comp, x, y, z, n, segundos;
+	String texto;
 
-		//triangulo
-		Scanner inputInt = new Scanner(System.in); 
+	//triangulo
+	Scanner inputInt = new Scanner(System.in); 
 	    
-		System.out.println("triangulo");
+	System.out.println("triangulo");
         System.out.println("altura triangulo? ");  
         altura = inputInt.nextInt(); 
         System.out.println("base triangulo? ");  
