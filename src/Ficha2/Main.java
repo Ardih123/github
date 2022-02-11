@@ -2,7 +2,7 @@ package Ficha2;
 
 import java.util.Scanner;
 
-public class Ficha2 {
+public class Main {
 
 	// funcoes
 	public static int areaTriang(int altura, int base) {
