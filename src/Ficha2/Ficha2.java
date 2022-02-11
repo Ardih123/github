@@ -17,12 +17,10 @@ public class Ficha2 {
 	
 	public static int areaCal (int x, int y, int z) {
 		if (z == 1) {
-			int total = x * y;
-			return total;
+			areaTriang (x, y);
 		}
 		else {
-			int total = x * y;
-			return total;
+			areaRetang (x, y);
 		}
 	}
 	
@@ -36,11 +34,11 @@ public class Ficha2 {
 	
 	public static int factorRecursivo(int n) {
 		if (n >= 1) {
-			 return n * factorRecursivo(n - 1);
+			return n * factorRecursivo(n - 1);
 		}   
-        else {
-        	return 1;
-        }  
+        	else {
+        		return 1;
+        	}  
 	}
 	
 	public static int numTotalVogais(String texto) {
@@ -115,7 +113,7 @@ public class Ficha2 {
         base = inputInt.nextInt(); 
         
         int areaTriangulo = areaTriang(altura, base);
-        System.out.println("a area do triangulo é " + areaTriangulo);
+        System.out.println("a area do triangulo Ã© " + areaTriangulo);
         
         
         //retangulo
@@ -126,7 +124,7 @@ public class Ficha2 {
         comp = inputInt.nextInt(); 
         
         int areaRetangulo = areaRetang(altura, comp);
-        System.out.println("a area do retangulo é " + areaRetangulo);
+        System.out.println("a area do retangulo Ã© " + areaRetangulo);
         
         
         //area
@@ -141,10 +139,10 @@ public class Ficha2 {
         int areaCal = areaCal(x, y, z);
         
         if (z == 1) {
-            System.out.println("a area do triangulo é " + areaCal);	
+            System.out.println("a area do triangulo Ã© " + areaCal);	
         }
         else {
-            System.out.println("a area do retangulo é " + areaCal);
+            System.out.println("a area do retangulo Ã© " + areaCal);
         }	
         
         
@@ -155,7 +153,7 @@ public class Ficha2 {
         n = inputInt.nextInt(); 
         
         int factorial = factor(n);
-        System.out.println("valor do factorial é: " + factorial);
+        System.out.println("valor do factorial Ã©: " + factorial);
         
         
         
@@ -165,7 +163,7 @@ public class Ficha2 {
         n = inputInt.nextInt(); 
         
         int factorialRecursivo = factorRecursivo(n);
-        System.out.println("valor do factorial "+n+" é: " + factorialRecursivo);
+        System.out.println("valor do factorial "+n+" Ã©: " + factorialRecursivo);
         
         
         
