@@ -106,7 +106,7 @@ public class Main {
 		base = inputInt.nextInt();
 
 		int areaTriangulo = areaTriang(altura, base);
-		System.out.println("a area do triangulo Ã© " + areaTriangulo);
+		System.out.println("a area do triangulo é " + areaTriangulo);
 
 		// retangulo
 		System.out.println("\nretangulo");
@@ -116,7 +116,7 @@ public class Main {
 		comp = inputInt.nextInt();
 
 		int areaRetangulo = areaRetang(altura, comp);
-		System.out.println("a area do retangulo Ã© " + areaRetangulo);
+		System.out.println("a area do retangulo é " + areaRetangulo);
 
 		// area
 		System.out.println("\narea");
@@ -135,7 +135,7 @@ public class Main {
 		n = inputInt.nextInt();
 
 		int factorial = factor(n);
-		System.out.println("valor do factorial Ã©: " + factorial);
+		System.out.println("valor do factorial é: " + factorial);
 
 		// factorial recursivo
 		System.out.println("\nfactorial recursivo");
@@ -143,7 +143,7 @@ public class Main {
 		n = inputInt.nextInt();
 
 		int factorialRecursivo = factorRecursivo(n);
-		System.out.println("valor do factorial " + n + " Ã©: " + factorialRecursivo);
+		System.out.println("valor do factorial " + n + " é: " + factorialRecursivo);
 
 		// total vogais
 		Scanner inputString = new Scanner(System.in);

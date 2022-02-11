@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-//Escreva  a  função  main()  para  testar  a  classe  ContaBancária.  
-//Crie  uma  conta,  efetue depósitos e levantamentos e imprima no ecrã a informação da conta sempre que atualiza o saldo.
+//+Escreva  a  função  main()  para  testar  a  classe  ContaBancária.  
+//+Crie  uma  conta,  efetue depósitos e levantamentos e imprima no ecrã a informação da conta sempre que atualiza o saldo.
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
