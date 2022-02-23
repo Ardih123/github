@@ -23,7 +23,7 @@ public class Cesto {
 	 * todos os métodos.
 	 */
 	
-	private int totalItems, capacidadeMaxima;
+	private int totalItems, capacidadeMaxima, frutaExtra=0;
 	List<Fruta> listaFruta;
 	
 	public Cesto() {
@@ -37,7 +37,8 @@ public class Cesto {
 			listaFruta.add(aFruta);
 		}
 		else {
-			System.out.println("Cesto está cheio! 100 artigos");
+			frutaExtra++;
+			System.out.println("Cesto está cheio! "+ (listaFruta.size()+frutaExtra) +" artigos");
 		}
 	}
 	
