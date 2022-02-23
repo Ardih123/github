@@ -33,7 +33,7 @@ public class Cesto {
 	}
 	
 	public void insereFrutaCesto(Fruta aFruta) {
-		if(listaFruta.size() <= capacidadeMaxima) {
+		if(listaFruta.size() < capacidadeMaxima) {
 			listaFruta.add(aFruta);
 		}
 		else {

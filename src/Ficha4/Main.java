@@ -63,6 +63,13 @@ public class Main {
 		System.out.println("\nTotal com desconto");
 		System.out.println("Pera Peso Total: " + (PeraPeso.pagar() - ((FrutaPeso) PeraPeso).descontar(10)) + "€");
 		System.out.println("Pera Volume Total: " + (PeraVolume.pagar() - ((FrutaVolume) PeraVolume).descontar(10)) + "€");
+		
+		//testar limite cesto
+		System.out.println("\nTestar limite do cesto");
+		for(int i = 0; i <= 100; i++) {
+			cesto1.insereFrutaCesto(PeraVolume);
+		}
+		cesto1.tipoFrutaCesto();
 	}
 
 }
