@@ -1,8 +1,10 @@
 package Ficha4;
 
 public class FrutaPeso extends Fruta implements Descontavel {
+	
+	private double percentagemDesconto;
 
-	public FrutaPeso(String aNomeFruta, double aPreco, double aUnidade) {
+	public FrutaPeso(String aNomeFruta, double aPreco, float aUnidade) {
 		super(aNomeFruta, aPreco, aUnidade);
 		// TODO Auto-generated constructor stub
 	}
@@ -14,11 +16,15 @@ public class FrutaPeso extends Fruta implements Descontavel {
 	}
 
 	@Override
-	public double descontar(double aPercentagem) {
+	public double descontar() {
 		// TODO Auto-generated method stub
 		double total = 0;
-		total = pagar() * (aPercentagem / 100);
+		total = pagar() * (percentagemDesconto / 100);
 		return total;
+	}
+
+	public void setPercentagemDesconto(double percentagemDesconto) {
+		this.percentagemDesconto = percentagemDesconto;
 	}
 
 }

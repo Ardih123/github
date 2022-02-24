@@ -10,5 +10,5 @@ interface Descontavel {
 	 * classes. Escreva a função main() para testar as respetivas alterações.
 	 */
 	
-	public double descontar(double aPercentagem);
+	public double descontar();
 }

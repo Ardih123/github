@@ -56,13 +56,15 @@ public class Main {
 		
 		//public double descontar(double aPercentagem)
 		System.out.println("\nValor Desconto");
-		System.out.println("Pera Peso Desconto: " + ((FrutaPeso) PeraPeso).descontar(10) + "€");
-		System.out.println("Pera Volume Desconto: " + ((FrutaVolume) PeraVolume).descontar(10) + "€");
+		((FrutaPeso) PeraPeso).setPercentagemDesconto(15);
+		((FrutaVolume) PeraVolume).setPercentagemDesconto(25);
+		System.out.println("Pera Peso Desconto: " + ((FrutaPeso) PeraPeso).descontar() + "€");
+		System.out.println("Pera Volume Desconto: " + ((FrutaVolume) PeraVolume).descontar() + "€");
 		
 		//public double descontar(double aPercentagem)
 		System.out.println("\nTotal com desconto");
-		System.out.println("Pera Peso Total: " + (PeraPeso.pagar() - ((FrutaPeso) PeraPeso).descontar(10)) + "€");
-		System.out.println("Pera Volume Total: " + (PeraVolume.pagar() - ((FrutaVolume) PeraVolume).descontar(10)) + "€");
+		System.out.println("Pera Peso Total: " + (PeraPeso.pagar() - ((FrutaPeso) PeraPeso).descontar()) + "€");
+		System.out.println("Pera Volume Total: " + (PeraVolume.pagar() - ((FrutaVolume) PeraVolume).descontar()) + "€");
 		
 		//testar limite cesto
 		System.out.println("\nTestar limite do cesto");
