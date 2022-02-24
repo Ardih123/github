@@ -9,7 +9,7 @@ public class FrutaUnidade extends Fruta {
 	
 	public double pagar() {
 		double total = 0;
-		total = getPreco() * getUnidade();
+		total = super.getPreco() * super.getUnidade();
 		return total;
 	}
 

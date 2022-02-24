@@ -45,7 +45,7 @@ public class Cesto {
 	public void valorTotalCesto() {
 		double total = 0;
 		for(Fruta frutas : listaFruta) {
-			total += frutas.getPreco();
+			total += frutas.pagar();
 		}
 		System.out.println("Preço total do cesto: " + total + "€");
 	}
@@ -80,13 +80,13 @@ public class Cesto {
 		double valorUnidade=0, valorPeso=0, valorVolume=0;
 		for(Fruta frutas : listaFruta) {
 			if(frutas instanceof FrutaUnidade) {
-				valorUnidade += frutas.getPreco();
+				valorUnidade += frutas.pagar();
 			}
 			if(frutas instanceof FrutaPeso) {
-				valorPeso += frutas.getPreco();
+				valorPeso += frutas.pagar();
 			}
 			if(frutas instanceof FrutaVolume) {
-				valorVolume += frutas.getPreco();
+				valorVolume += frutas.pagar();
 			}
 		}
 		System.out.println("O cesto tem " + valorUnidade +"€ tipo unidade, "+ valorPeso +"€ tipo peso, "+ valorVolume +"€ tipo volume.");
@@ -96,7 +96,7 @@ public class Cesto {
 		double total = 0;
 		for(Fruta frutas : listaFruta) {
 			if(frutas.getClass().getSimpleName().equals(aTipo)) {
-				total += frutas.getPreco();
+				total += frutas.pagar();
 			}
 		}
 		System.out.println("O cesto tem " + total + "€ do tipo " + aTipo);

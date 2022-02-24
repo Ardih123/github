@@ -9,9 +9,9 @@ public class Main {
 		//List<Fruta> listaFruta = new ArrayList<Fruta>();
 		//List<Cesto> listaCesto = new ArrayList<Cesto>();
 		
-		Fruta PeraUnidade = new FrutaUnidade("Pera", 0.50, 1);
-		Fruta PeraPeso = new FrutaPeso("Pera", 2, 1);
-		Fruta PeraVolume = new FrutaVolume("Pera", 1.50, 1);
+		FrutaUnidade PeraUnidade = new FrutaUnidade("Pera", 0.50, 1);
+		FrutaPeso PeraPeso = new FrutaPeso("Pera", 2, 1);
+		FrutaVolume PeraVolume = new FrutaVolume("Pera", 1.50, 1);
 		
 		//public double pagar()
 		System.out.println("Pera Unidade: " + PeraUnidade.pagar() + "€");
@@ -54,17 +54,20 @@ public class Main {
 		cesto1.valorTotal("FrutaPeso");
 		cesto1.valorTotal("FrutaVolume");
 		
+		//public void setPercentagemDesconto(double percentagemDesconto)
+		PeraPeso.setPercentagemDesconto(10);
+		PeraVolume.setPercentagemDesconto(20);
+		
 		//public double descontar(double aPercentagem)
-		System.out.println("\nValor Desconto");
-		((FrutaPeso) PeraPeso).setPercentagemDesconto(15);
-		((FrutaVolume) PeraVolume).setPercentagemDesconto(25);
-		System.out.println("Pera Peso Desconto: " + ((FrutaPeso) PeraPeso).descontar() + "€");
-		System.out.println("Pera Volume Desconto: " + ((FrutaVolume) PeraVolume).descontar() + "€");
+		System.out.println("\nValor Percentagem");
+		System.out.println("Pera Peso Desconto: " + PeraPeso.descontar() + "%");
+		System.out.println("Pera Volume Desconto: " + PeraVolume.descontar() + "%");
 		
 		//public double descontar(double aPercentagem)
 		System.out.println("\nTotal com desconto");
-		System.out.println("Pera Peso Total: " + (PeraPeso.pagar() - ((FrutaPeso) PeraPeso).descontar()) + "€");
-		System.out.println("Pera Volume Total: " + (PeraVolume.pagar() - ((FrutaVolume) PeraVolume).descontar()) + "€");
+		System.out.println("Pera Peso Total: " + PeraPeso.pagar() + "€");
+		System.out.println("Pera Volume Total: " + PeraVolume.pagar() + "€");
+		cesto1.valorTotalCesto();
 		
 		//testar limite cesto
 		System.out.println("\nTestar limite do cesto");
