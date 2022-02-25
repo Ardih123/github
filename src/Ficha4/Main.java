@@ -60,8 +60,8 @@ public class Main {
 		
 		//public double descontar(double aPercentagem)
 		System.out.println("\nValor Percentagem");
-		System.out.println("Pera Peso Desconto: " + PeraPeso.descontar() + "%");
-		System.out.println("Pera Volume Desconto: " + PeraVolume.descontar() + "%");
+		System.out.println("Pera Peso Desconto: " + PeraPeso.descontar() + "€");
+		System.out.println("Pera Volume Desconto: " + PeraVolume.descontar() + "€");
 		
 		//public double descontar(double aPercentagem)
 		System.out.println("\nTotal com desconto");

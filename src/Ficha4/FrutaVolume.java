@@ -13,7 +13,7 @@ public class FrutaVolume extends Fruta implements Descontavel {
 	public double pagar() {
 		double total = 0, totalDisconto = 0;
 		total = super.getPreco() * super.getUnidade();
-		totalDisconto = total - (total * descontar());
+		totalDisconto = total - descontar();
 		return totalDisconto;
 	}
 
@@ -21,7 +21,7 @@ public class FrutaVolume extends Fruta implements Descontavel {
 	public double descontar() {
 		// TODO Auto-generated method stub
 		double total = 0;
-		total = percentagemDesconto / 100;
+		total = (super.getPreco() * super.getUnidade()) * (percentagemDesconto / 100);
 		return total;
 	}
 

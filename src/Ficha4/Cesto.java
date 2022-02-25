@@ -23,12 +23,12 @@ public class Cesto {
 	 * todos os métodos.
 	 */
 	
-	private int totalItems, capacidadeMaxima, frutaExtra=0;
-	List<Fruta> listaFruta;
+	private int totalItems, frutaExtra=0;
+	private final int capacidadeMaxima = 100;
+	private List<Fruta> listaFruta;
 	
 	public Cesto() {
 		this.totalItems = 0;
-		this.capacidadeMaxima = 100;
 		listaFruta = new ArrayList<Fruta>();
 	}
 	
@@ -116,10 +116,6 @@ public class Cesto {
 
 	public void setTotalItems(int totalItems) {
 		this.totalItems = totalItems;
-	}
-
-	public void setCapacidadeMaxima(int capacidadeMaxima) {
-		this.capacidadeMaxima = capacidadeMaxima;
 	}
 
 	public void setListaFruta(List<Fruta> listaFruta) {
