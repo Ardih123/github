@@ -33,8 +33,8 @@ public class ContaBancaria {
 	
 	public ContaBancaria(String aNome) {
 		titular = aNome;
-		getDataAbertura();
-		getSaldo();
+		LocalDate dataAbertura = LocalDate.now();
+		saldo = 0.00;
 	}
 
 	public double getSaldo() {
