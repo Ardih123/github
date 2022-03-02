@@ -1,4 +1,4 @@
-package Extra1;
+package ProjetoExtra1;
 
 public class Aplicação {
 
@@ -7,13 +7,14 @@ public class Aplicação {
 	 * de 1 a 5), um tipo (Games, Business, Education, Lifestyle, Entertainment,
 	 * Utilities, Travel e Health & Fitness) e um programador.
 	 */
+	//Incluir novas aplicações com a informação necessária
 	
 	private String nome;
-	private int preco;
+	private double preco;
 	private double avaliacao;
 	private TipoAplicação tipoAplicacao;
 	
-	public Aplicação(String nome, int preco, double avaliacao, TipoAplicação tipoAplicacao) {
+	public Aplicação(String nome, double preco, double avaliacao, TipoAplicação tipoAplicacao) {
 		this.nome = nome;
 		this.preco = preco;
 		this.avaliacao = avaliacao;
@@ -24,7 +25,7 @@ public class Aplicação {
 		return nome;
 	}
 
-	public int getPreco() {
+	public double getPreco() {
 		return preco;
 	}
 
@@ -40,7 +41,7 @@ public class Aplicação {
 		this.nome = nome;
 	}
 
-	public void setPreco(int preco) {
+	public void setPreco(double preco) {
 		this.preco = preco;
 	}
 

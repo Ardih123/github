@@ -1,4 +1,4 @@
-package Extra1;
+package ProjetoExtra1;
 
 public class Cliente {
 

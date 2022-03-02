@@ -1,4 +1,4 @@
-package Extra1;
+package ProjetoExtra1;
 
 public class Avaliação {
 
@@ -9,6 +9,8 @@ public class Avaliação {
 	 * após estas terem sido compradas. Além da avaliação (classificação de 1 a 5),
 	 * os utilizadores também podem opcionalmente deixar comentários
 	 */
+	
+	private double classificacao;
 	
 	
 }
