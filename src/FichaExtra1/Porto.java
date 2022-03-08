@@ -24,14 +24,14 @@ public class Porto {
 		this.listaP = listaP;
 	}
 
-	public boolean isDupe (List<Navio> listaNavios) {
-		boolean verifica = false;
+	public String isDupe (List<Navio> listaNavios) {
+		String verifica = "falso";
 		for(Navio navios : listaNavios) {
-			if(navios.getId() != navios.getId()) {
-				verifica = false;
+			if(navios.getId() != listaNavios.get(0).getId()) {
+				verifica = "falso";
 			}
 			else {
-				verifica = true;
+				verifica = "verdade";
 			}
 		}
 		return verifica;
@@ -47,11 +47,10 @@ public class Porto {
 	
 	public int contaTodos () {
 		int totalP = 0, total = 0;
-		int totalPC = contaContentores();
 		for(Petroleiro p : listaP) {
 			totalP += p.getCarga();
 		}
-		total = (totalPC * 10) + totalP;
+		total = (contaContentores() * 10) + totalP;
 		return total;
 	}
 	
