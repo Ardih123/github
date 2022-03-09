@@ -18,20 +18,23 @@ public class Porto {
 	
 	private List<PortaContentores> listaPC;
 	private List<Petroleiro> listaP;
+	private List<Navio> listaNavios;
 	
-	public Porto(List<PortaContentores> listaPC, List<Petroleiro> listaP) {
+	public Porto(List<PortaContentores> listaPC, List<Petroleiro> listaP, List<Navio> listaNavios) {
 		this.listaPC = listaPC;
 		this.listaP = listaP;
+		this.listaNavios = listaNavios;
 	}
 
-	public String isDupe (List<Navio> listaNavios) {
-		String verifica = "falso";
-		for(Navio navios : listaNavios) {
-			if(navios.getId() != listaNavios.get(0).getId()) {
-				verifica = "falso";
+	public boolean isDupe (List<Navio> listaNavios) {
+		boolean verifica = false;
+		for(int i = 1; i < listaNavios.size(); i++) {
+			if(!(listaNavios.get(i).getId().equals(listaNavios.get(0).getId()))) {
+				verifica = false;
 			}
 			else {
-				verifica = "verdade";
+				verifica = true;
+				break;
 			}
 		}
 		return verifica;
@@ -54,11 +57,16 @@ public class Porto {
 		return total;
 	}
 	
-	public void add(PortaContentores PC) {
-		listaPC.add(PC);
+	public void addPC(PortaContentores PC) {
+		if(isDupe(listaNavios) == false) {
+			listaPC.add(PC);
+		}
 	}
 	
-	public void add(Petroleiro P) {
-		listaP.add(P);
+	public void addP(Petroleiro P) {
+		if(isDupe(listaNavios) == false) {
+			listaP.add(P);
+		}
 	}
+	
 }

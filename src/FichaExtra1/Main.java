@@ -34,7 +34,7 @@ public class Main {
 		}
 		
 		//public Porto(List<PortaContentores> listaPC, List<Petroleiro> listaP)
-		Porto Funchal = new Porto(listaPC, listaP);
+		Porto Funchal = new Porto(listaPC, listaP, listaNavios);
 		
 		System.out.println("\nPorto");
 		System.out.println("Número de contentores (PC) no porto: " + Funchal.contaContentores());
